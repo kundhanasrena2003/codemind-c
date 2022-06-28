@@ -1,25 +1,30 @@
 #include<stdio.h>
-#include<math.h>
 int main()
 {
-    int n,i,c=0,temp,d,p=0;
+    int n,i,j,m;
     scanf("%d",&n);
-    temp=n;
-    while(temp!=0)
+    int ar[100];
+    int k=n,t=0,s=1,ad=0,f=0,a=0;
+    while(k!=0)
     {
-        d=temp%10;
-        temp=temp/10;
-        c++;
+        t=k%10;
+        ar[a]=t;
+        k=k/10;
+        a++;
     }
-    temp=n;
-    while(temp!=0)
+   int z=a;
+    for(j=1;j<=a;j++)
     {
-        d=temp%10;
-        temp=temp/10;
-        p=p+pow(d,c);
-        c--;
+        for(m=z;m>0;m--)
+        {
+            s=s*ar[f];
+        }
+        f++;
+        z--;
+        ad=ad+s;
+        s=1;
     }
-    if(p==n)
+    if(ad==n)
     {
         printf("True");
     }
@@ -27,5 +32,4 @@ int main()
     {
         printf("False");
     }
-    return 0;
 }

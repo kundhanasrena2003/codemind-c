@@ -29,7 +29,7 @@ int main()
             n=n/10;
         }
     }
-    if(c==0 && x==0 && y==0)
+    if(c==0&&x==0&&y==0)
     {
         printf("Mega Prime");
     }
